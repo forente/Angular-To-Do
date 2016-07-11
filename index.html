@@ -9,7 +9,12 @@
   <body ng-controller='list'>
     <input type="text" ng-model="message"></input>
     {{message}}
-    
+    <br>
+    <button ng-click='addItem(message)'>Add to list</button>
+
+    <div ng-repeat='item in listOfItems track by $index'>
+      {{item}}
+    </div>
 
   </body>
 </html>

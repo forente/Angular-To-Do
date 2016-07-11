@@ -1,10 +1,10 @@
 var app = angular.module('to-do-list',[]);
 app.controller('list',function($scope){
-  $scope.list = [];
+  $scope.listOfItems = ['a','b','c','d'];
   $scope.message = "box";
-  console.log($scope.message);
+
+  $scope.addItem = function(m){
+    $scope.listOfItems.push(m);
+  };
 
 });
-
-
-console.log('print');
