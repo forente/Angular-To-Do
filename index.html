@@ -12,9 +12,9 @@
     <br>
     <button ng-click='addItem(message)'>Add to list</button>
 
-    <div ng-repeat='item in listOfItems track by $index'>
-      {{item}}
-    </div>
+    <ul ng-repeat='item in listOfItems track by $index'>
+      <li>{{item}}</li>
+    </>
 
   </body>
 </html>
